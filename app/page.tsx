@@ -14,8 +14,8 @@ export default function Home() {
                 Learn how to grow your business with our expert advice.
               </p>
               <div className="mt-10 space-y-16 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16">
-                <PostCard />
-                <PostCard />
+                {/* Loop thorugh posts here */}
+                {/* <PostCard /> */}
               </div>
             </div>
           </div>

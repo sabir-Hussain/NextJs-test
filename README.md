@@ -1,36 +1,62 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Next.js Live Coding Challenge
 
-## Getting Started
+## Overview
 
-First, run the development server:
+This live coding challenge involves building a simple blog application using Next.js, interacting with an external API, and implementing basic routing. The goal is to assess your proficiency in using Next.js, handling APIs, and applying TypeScript in a real-world project setting.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Tasks
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Task 1: Display Posts on Homepage
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+**Objective:** Fetch and display a list of blog posts on the homepage using an existing `PostCard` component.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+**Requirements:**
 
-## Learn More
+- Fetch blog posts data from the JSON Placeholder API: [Posts API](https://jsonplaceholder.typicode.com/posts)
+- Use the `PostCard` component to render each post. This component should display the post's title and a brief snippet of its body.
+- Ensure the homepage is server-side rendered.
 
-To learn more about Next.js, take a look at the following resources:
+### Task 2: TypeScript Integration
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+**Objective:** Properly type all components and data interactions using TypeScript.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+**Requirements:**
 
-## Deploy on Vercel
+- Define TypeScript interfaces or types for the blog post data.
+- Ensure all components, including `PostCard`, are typed correctly to handle the data structures involved.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Task 3: Post Detail Page
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+**Objective:** Implement dynamic routing to a detail page for each post.
+
+**Requirements:**
+
+- When a user clicks on a post on the homepage, they should be routed to a detailed page for that specific post.
+- The URL for the detail page should follow the pattern: `http://localhost:3000/post/[id]` where `[id]` is the post's unique identifier.
+- On the post detail page, use the same `PostCard` component to render the full content of the blog post.
+- Fetch the specific post's data from: [Post Detail API](https://jsonplaceholder.typicode.com/posts/1) replacing the `1` at the end with the appropriate post ID.
+- Utilize Next.js's routing and data fetching enhancements (`getStaticPaths` and `getStaticProps` for static generation) to ensure optimal performance and SEO benefits.
+
+## Additional Information
+
+- For understanding API endpoints and data structures, refer to the JSON Placeholder documentation: [JSON Placeholder API](https://jsonplaceholder.typicode.com/)
+
+## Evaluation Criteria
+
+- Correct implementation of API requests and data handling.
+- Proper use and configuration of TypeScript.
+- Effective use of Next.js features (e.g., dynamic routing, data fetching methods).
+- Code readability and component reusability.
+
+## Setup
+
+Before starting, ensure your development environment includes:
+
+- Node.js installed (LTS version recommended).
+- Access to a terminal and basic knowledge of Git commands.
+
+Good luck with the challenge!
+
+---
+
+This README provides a structured guide for the candidate, detailing the tasks, requirements, and resources available for the coding challenge.
